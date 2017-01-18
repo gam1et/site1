@@ -17,6 +17,18 @@ html, body{
     height:inherit;
     margin:0 auto;
 } 
+.line_r{
+    width:60px;
+    height:3px;
+    background-color:#f38181;
+    margin:40px auto;
+}
+.line_w{
+    width:60px;
+    height:3px;
+    background-color:#fff;
+    margin:70px auto;
+}
 
 
 
@@ -74,12 +86,6 @@ html, body{
         font-size:150px;
         line-height:.9;
     }
-    .line_w{
-        width:60px;
-        height:3px;
-        background-color:#fff;
-        margin:70px auto;
-    }
     .btn{
         border:4px solid #fff;
         text-transform: uppercase;
@@ -89,7 +95,12 @@ html, body{
         padding:10px 29px;
         margin:0 auto;
         width:108px;
-        cursor:pointer
+        cursor:pointer;
+        transition:.2s;
+        &:hover{
+            background-color:rgba(255,255,255,.1);    
+            transition:.2s;
+        }
     }
 }
 .about{
@@ -104,13 +115,8 @@ html, body{
         color:#333;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-        font-size:30px
-    }
-    .line_r{
-        width:60px;
-        height:3px;
-        background-color:#f38181;
-        margin:70px auto;
+        font-size:30px;
+        text-transform: uppercase
     }
     p{
         text-align: center;
@@ -145,12 +151,12 @@ html, body{
 }
 
 .counter{
-    margin:110px auto;
+    margin:110px auto 0 auto;
     background-color:@colorBlue;
     .count{
         color:#fff;
         float:left;
-        margin:0 50px;
+        margin:0 55px;
         p{
             margin:0;
             padding:0;
@@ -164,6 +170,69 @@ html, body{
         .word{
             font-size:14px;
             text-transform: uppercase
+        }
+    }
+}
+
+.services{
+    background-color:#fff;
+    h1{
+        color:#333;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: uppercase
+    }
+    h2{
+        color:#333;
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size:24px
+    }
+    .service_block{
+        width:329px;
+        height:68px;
+        float:left;
+        margin-left:55px;
+        margin-bottom:100px;
+        h4{
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-size:14px;
+            color:#333;
+            margin-top:0;
+        }
+        p{
+            color:#999;
+            font-family: 'Roboto', sans-serif;
+            font-size:15px;
+        }
+        .content{
+            float:left;
+            width:270px;
+        }
+        .icon{
+            float:left;
+            background:url(img/icons_service.png) no-repeat;
+            margin-right:20px;
+            width:32px;
+            height:32px;
+        }
+        &:nth-of-type(2) .icon{
+                background-position: -38px 0
+        }
+        &:nth-of-type(3) .icon{
+                background-position: -76px 0
+        }
+        &:nth-of-type(4) .icon{
+                background-position: -112px 0
+        }
+        &:nth-of-type(5) .icon{
+                background-position: -149px 0
+        }
+        &:nth-of-type(6) .icon{
+                background-position: -186px 0
         }
     }
 }
