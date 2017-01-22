@@ -1,4 +1,5 @@
-@colorBlue: #95e1d3;
+@color-blue: #95e1d3;
+@color-text: #999;
 
 html, body{
     margin:0;
@@ -16,6 +17,7 @@ html, body{
     width:1200px;
     height:inherit;
     margin:0 auto;
+    position:relative;
 } 
 .line_r{
     width:60px;
@@ -122,7 +124,7 @@ html, body{
         text-align: center;
         font-size:15px;
         font-family: 'Roboto', sans-serif;
-        color:#999;
+        color:@color-text;
     }
     .about_imgs{
         margin:100px auto 0 auto;
@@ -145,14 +147,14 @@ html, body{
     }
     .about_img{
         display:inline-block;
-        background-color:@colorBlue;
+        background-color:@color-blue;
         margin:0 10px;
     }
 }
 
 .counter{
-    margin:110px auto 0 auto;
-    background-color:@colorBlue;
+    margin:55px auto 0 auto;
+    background-color:@color-blue;
     .count{
         color:#fff;
         float:left;
@@ -204,7 +206,7 @@ html, body{
             margin-top:0;
         }
         p{
-            color:#999;
+            color:@color-text;
             font-family: 'Roboto', sans-serif;
             font-size:15px;
         }
@@ -233,6 +235,115 @@ html, body{
         }
         &:nth-of-type(6) .icon{
                 background-position: -186px 0
+        }
+    }
+}
+.feature{
+    background: url(img/feature_bg.jpg) no-repeat;
+    width:100%;
+    height:750px;
+    h1{
+        color:#333;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: uppercase
+    }
+    h2{
+        color:#333;
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size:24px
+    }
+    .ipad{
+        background:url(img/ipad.png) no-repeat;
+        background-size: 427px;
+        margin: 0 auto;
+        width:477px;
+        height:582px;
+    }
+    .iphone{
+        background:url(img/iphone.png) no-repeat;
+        background-size: 250px;
+        width:215px;
+        height:400px;
+        position:absolute;
+        top:405px;
+        left:700px;
+    }
+}
+.service_block2{
+     h1{
+        color:#333;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: uppercase
+    }
+    h2{
+        color:#333;
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size:24px
+    }
+    p.text{
+        color:@color-text;
+        font-family: 'Roboto', sans-serif;
+        font-size:15px;
+        text-align:center;
+    }
+    .img{
+        float:left;
+    }
+    .content{
+        margin-top:80px;
+        .sliders{
+            margin-left:20px;
+            float:left;
+            .slider{
+                width:590px;
+                border-top:1px solid #e5e5e5;
+                h3{
+                    text-transform: uppercase;
+                    cursor:pointer;
+                    outline: none;
+                    font-family: 'Montserrat', sans-serif;
+                    color:#333;
+                    font-size:14px;
+                    line-height: 25px;
+                    &::-webkit-details-marker { display:none; }
+                    &::details-marker { display:none; }
+                }
+                .icon{
+                    background:url(img/icons_service2.png) no-repeat;
+                    width:32px;
+                    height:32px;
+                    float:left;
+                    margin:10px;
+                }
+                &:nth-child(1) .icon{
+                    background-position:0 0;
+                }
+                &:nth-child(2) .icon{
+                    background-position:-32px 0;
+                }
+                &:nth-child(3) .icon{
+                    background-position:-70px 0;
+                }
+                p{
+                    display:none;
+                    padding: 15px;
+                    border-top:1px solid #e5e5e5;
+                    font-family: 'Roboto', sans-serif;
+                    font-size:15px;
+                    color:@color-text;
+                }
+                &:last-child{
+                    border-bottom: 1px solid #e5e5e5
+                }
+            }
         }
     }
 }
